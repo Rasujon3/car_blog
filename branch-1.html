@@ -36,6 +36,8 @@
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Rating Custom CSS -->
+    <link href="css/rating.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -536,6 +538,19 @@
                 name="author"
               />
             </div>
+            <!-- ⭐ Star Rating -->
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Rate this branch</label>
+              <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+              </div>
+              <input type="hidden" name="rating" id="ratingValue" value="0" />
+            </div>
+            <!-- ⭐ End Rating -->
             <div class="mb-3">
               <label
                 for="exampleFormControlTextarea1"

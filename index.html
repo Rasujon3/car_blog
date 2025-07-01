@@ -36,6 +36,35 @@
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <style>
+        .star-container {
+    display: flex;
+    flex-direction: row; /* ⭐️ Horizontal */
+    gap: 2px;
+  }
+
+  .star {
+    font-size: 20px;
+    color: #ccc;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+  }
+
+  .star.full {
+    color: #FFD700;
+  }
+
+  .star.half::before {
+    content: '★';
+    position: absolute;
+    color: #FFD700;
+    width: 50%;
+    overflow: hidden;
+  }
+    </style>
+
   </head>
 
   <body>
@@ -1466,6 +1495,7 @@
                   Shop
                 </h5>
               </a>
+              <div id="rating_show_1" class="star-container"></div>
               <div class="card-text">
                 <h6 class="mb-2">Contract No:</h6>
                 <ul class="ps-0" style="list-style: none">
@@ -1503,6 +1533,7 @@
               <a href="branch-1.html">
                 <h5 class="card-title">Super Extra Automatic Workshop</h5>
               </a>
+              <div id="rating_show_2" class="star-container"></div>
               <div class="card-text">
                 <h6 class="mb-2">Contract No:</h6>
                 <ul class="ps-0" style="list-style: none">
@@ -1549,6 +1580,7 @@
               <a href="branch-2.html">
                 <h5 class="card-title">Blue Mart Used Auto Spare Parts LLC</h5>
               </a>
+              <div id="rating_show_5" class="star-container"></div>
               <div class="card-text">
                 <h6 class="mb-2">Contract No:</h6>
                 <ul class="ps-0" style="list-style: none">
@@ -1596,6 +1628,7 @@
                   Green Shape Used Auto Spare Parts Trading LLC
                 </h5>
               </a>
+              <div id="rating_show_6" class="star-container"></div>
               <div class="card-text">
                 <h6 class="mb-2">Contract No:</h6>
                 <ul class="ps-0" style="list-style: none">
@@ -1640,6 +1673,7 @@
                   Mohammad Saif Al Islam Used Auto Spare Parts
                 </h5>
               </a>
+              <div id="rating_show_7" class="star-container"></div>
               <div class="card-text">
                 <h6 class="mb-2">Contract No:</h6>
                 <ul class="ps-0" style="list-style: none">
