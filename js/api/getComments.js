@@ -81,8 +81,6 @@ const postComment = async (e) => {
   }
 
   console.log(formData.get("branch_id"));
-  //   console.log(formData);
-  // return false;
 
   try {
     const res = await fetch(url, {
